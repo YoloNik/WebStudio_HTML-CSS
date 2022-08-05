@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="learning result">
 	<title>WebStudio Home</title>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
@@ -12,11 +13,11 @@
 <body>
 		<header class="header">
 				<a class="logo" href="./index.html"><span class="logo-word accent">Web</span>Studio</a>	
-				<svg class="menu-icon" data-mobileOpenMenu>
+				<svg class="menu-icon" data-mobileOpenMenu aria-label="open menu button">
 					<use href="./img/symbol-defs.svg#icon-menu"></use>
 				</svg>
 				<div class="menu" data-mobileMenu>
-						<svg class="menu-close-btn accent-hover" data-mobileCloseMenu>
+						<svg class="menu-close-btn accent-hover" data-mobileCloseMenu aria-label="close menu button">
 							<use href="./img/symbol-defs.svg#icon-close"></use>
 						</svg>
 						<div class="wrapper">
@@ -24,7 +25,7 @@
 							<ul class="nav-list">
 								<li class="nav-list__item"><a class="accent accent-hover" href="./index.html">Студия</a></li>
 								<li class="nav-list__item"><a class="accent-hover " href="./portfolio.html">Портфолио</a></li>
-								<li class="nav-list__item"><a class="accent-hover" href="">Контакты</a></li>
+								<li class="nav-list__item"><a class="accent-hover" href="#footer">Контакты</a></li>
 							</ul>
 							</nav>
 						<ul class="contact-list">
@@ -42,23 +43,24 @@
 						</ul>
 						</div>	
 						<ul class="social-list">
-							<li class="social-list__item"><a class="menu-social-link" href="">Instagram</a></li>
+							<li class="social-list__item"><a class="menu-social-link" href="https://www.Instagram.com/">Instagram</a></li>
 							<li class="social-list__separator">|</li>
-							<li class="social-list__item"><a class="menu-social-link" href="">Twitter</a></li>
+							<li class="social-list__item"><a class="menu-social-link" href="https://www.Twitter.com/">Twitter</a></li>
 							<li class="social-list__separator">|</li>
-							<li class="social-list__item"><a class="menu-social-link" href="">Facebook</a></li>
+							<li class="social-list__item"><a class="menu-social-link" href="https://www.Facebook.com/">Facebook</a></li>
 							<li class="social-list__separator">|</li>
-							<li class="social-list__item"><a class="menu-social-link" href="">LinkedIn</a></li>
+							<li class="social-list__item"><a class="menu-social-link" href="https://www.LinkedIn.com/">LinkedIn</a></li>
 						</ul>
 				</div>
 		</header>
+
 		<main>
 			<section class="hero ">
 			<h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
 			<button class="hero-btn  " data-openModal type="button">Заказать услугу</button>
 			<div class="backdrop is-hidden" data-backdrop>
 				<div class="modal">
-					<button class="close-btn" data-closeModal>
+					<button class="close-btn" data-closeModal aria-label="close button for modal">
 						<svg class="close-btn_icon accent-hover">
 							<use href="./img/symbol-defs.svg#icon-close"></use>
 						</svg>
@@ -101,7 +103,8 @@
 									<svg class="modal-icon-checkbox">
 										<use href="./img/symbol-defs.svg#icon-check"></use>
 									</svg>
-							<strong class="user-consent">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></strong>
+							<strong class="user-consent">Соглашаюсь с рассылкой и принимаю 
+								<a href="https://support.microsoft.com/ru-ru/windows/%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F-%D0%BB%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%81%D0%BE%D0%B3%D0%BB%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BD%D0%B0-%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D0%B5%D1%81%D0%BF%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D0%BA%D0%BE%D1%80%D0%BF%D0%BE%D1%80%D0%B0%D1%86%D0%B8%D0%B8-%D0%BC%D0%B0%D0%B9%D0%BA%D1%80%D0%BE%D1%81%D0%BE%D1%84%D1%82-e26eedad-97a2-5250-2670-aad156b654bd">Условия договора</a></strong>
 							</label>
 						
 						<button class="modal-send-btn">Отправить</button>
@@ -156,7 +159,7 @@
 			<h2 class="occupation-title">Чем мы занимаемся</h2>
 			<ul class="occupation-list ">
 				<li class="occupation-list__item">
-					<a href="">
+					<a href="#">
 						<div class="img-occupation">
 							<img src="./img/img1.webp" alt="development process">
 							<h3>Десктопные приложения</>
@@ -164,7 +167,7 @@
 					</a>
 					</li>
 				<li class="occupation-list__item">
-					<a href="">
+					<a href="#">
 						<div class="img-occupation">
 							<img src="./img/img2.webp" alt="design on phone">
 							<h3>Мобильные приложения</>
@@ -172,7 +175,7 @@
 				</a>
 					</li>
 				<li class="occupation-list__item">
-					<a href="">
+					<a href="#">
 							<div class="img-occupation">
 							<img src="./img/img3.webp" alt="design on tablet">
 						<h3>Дизайнерские решения</>
@@ -185,7 +188,6 @@
 			<section class="team box">
 			
 			<h2 class="team-title">Наша команда</h2>
-				<!--<div class="box ">-->
 			<ul class="team-list">
 				<li class="team-list__item ">
 					<img src="./img/ProductDesigner.webp" alt="Игорь Демьяненко Product Designer">
@@ -193,28 +195,28 @@
 					<p>Product Designer</p>
 					<ul class="social">
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="instagram link" href="https://www.instagram.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="twitter link" href="https://www.twitter.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-twitter"></use>
 								</svg>
 						</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="facebook link" href="https://www.facebook.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="linkedin link" href="https://www.linkedin.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
@@ -228,28 +230,28 @@
 					<p>Frontend Developer</p>
 					<ul class="social">
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="instagram link" href="https://www.instagram.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="twitter link" href="https://www.twitter.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-twitter"></use>
 								</svg>
-							</a>
+						</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="facebook link" href="https://www.facebook.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="linkedin link" href="https://www.linkedin.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
@@ -263,28 +265,28 @@
 					<p>Marketing</p>
 					<ul class="social">
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="instagram link" href="https://www.instagram.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="twitter link" href="https://www.twitter.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-twitter"></use>
 								</svg>
-							</a>
+						</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="facebook link" href="https://www.facebook.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="linkedin link" href="https://www.linkedin.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
@@ -298,28 +300,28 @@
 					<p>UI Designer</p>
 					<ul class="social">
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="instagram link" href="https://www.instagram.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="twitter link" href="https://www.twitter.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-twitter"></use>
 								</svg>
-							</a>
+						</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="facebook link" href="https://www.facebook.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li>
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="linkedin link" href="https://www.linkedin.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
@@ -328,44 +330,43 @@
 					</ul>
 				</li>
 			</ul>
-			<!--</div>-->
 			</section>
 
 			<section class="clients box">
 				<h2 class="clients-title">Постоянные клиенты</h2>
 				<ul class="clients-list">
 					<li class="clients-list-item">
-						<a href=""><svg class="clients-icon">
+						<a aria-label="company 1" href="#"><svg class="clients-icon">
 							<use href="./img/symbol-defs.svg#icon-logoComp1"></use>
 						</svg>
 					</a>
 					</li>
 					<li class="clients-list-item">
-						<a href=""><svg class="clients-icon">
+						<a aria-label="company 2" href="#"><svg class="clients-icon">
 							<use href="./img/symbol-defs.svg#icon-logoComp2"></use>
 						</svg>
 					</a>
 					</li>
 					<li class="clients-list-item">
-						<a href=""><svg class="clients-icon">
+						<a aria-label="company 3" href="#"><svg class="clients-icon">
 							<use href="./img/symbol-defs.svg#icon-logoComp3"></use>
 						</svg>
 					</a>
 					</li>
 					<li class="clients-list-item">
-						<a href=""><svg class="clients-icon">
+						<a aria-label="company 4" href="#"><svg class="clients-icon">
 							<use href="./img/symbol-defs.svg#icon-logoComp4"></use>
 						</svg>
 					</a>
 					</li>
 					<li class="clients-list-item">
-						<a href=""><svg class="clients-icon">
+						<a aria-label="company 5" href="#"><svg class="clients-icon">
 							<use href="./img/symbol-defs.svg#icon-logoComp5"></use>
 						</svg>
 					</a>
 					</li>
 					<li class="clients-list-item">
-						<a href=""><svg class="clients-icon">
+						<a aria-label="company 6" href="#"><svg class="clients-icon">
 							<use href="./img/symbol-defs.svg#icon-logoComp6"></use>
 						</svg>
 					</a>
@@ -375,7 +376,7 @@
 			
 		</main>
 
-		<footer class="footer box">	
+		<footer class="footer box" id="footer">	
 				
 				<div class="footer-addres">
 					<a class="logo" href="./index.html"><span class="logo-word accent">Web</span>Studio</a>
@@ -397,28 +398,28 @@
 					<h2 class="footer-social_title">присоединяйтесь</h2>
 					<ul class="social-list">
 						<li class="socisl-list_item">
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="instagram link" href="https://www.instagram.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-instagram"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="socisl-list_item">
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="twitter link" href="https://www.twitter.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-twitter"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="socisl-list_item">
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="facebook link" href="https://www.facebook.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-facebook"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="socisl-list_item">
-							<a class="social-link" href="">
+							<a class="social-link" aria-label="linkedin link" href="https://www.linkedin.com/">
 								<svg class="social-link-icon">
 									<use href="./img/symbol-defs.svg#icon-linkedin"></use>
 								</svg>
