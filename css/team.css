@@ -1,0 +1,78 @@
+@charset "UTF-8";
+.team {
+  margin-top: 94px;
+  padding: 94px;
+  background-color: var(--team-bg);
+}
+.team-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-list__item {
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  margin-left: 30px;
+  -webkit-transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), outline 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.team-list__item:first-child {
+  margin: 0;
+}
+.team-list__item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  outline: 1px solid var(--acсent-color);
+}
+.team-list__item h3 {
+  text-align: center;
+}
+.team-list__item p {
+  margin-top: 10px;
+  text-align: center;
+  color: var(--second-text-color);
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  gap: 10px;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding: 12px;
+  overflow: hidden;
+  opacity: 0.4;
+}
+.social-link-icon {
+  width: 20px;
+  height: 20px;
+}
+.social-link:hover, .social-link:focus {
+  background-color: var(--acсent-color);
+  fill: var(--white-color);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+}/*# sourceMappingURL=team.css.map */

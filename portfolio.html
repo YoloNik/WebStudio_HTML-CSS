@@ -9,41 +9,58 @@
 	integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
 	crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/main.min.css">
 </head>
+
 <body>
-	<header>
-		<div class="box center">
-			<a class="logo" href="./index.html"><span class="logo-word accent">Web</span>Studio</a>
-			<nav class="nav">
-				<ul class="nav-list list">
-					<li class="nav-list__item center "><a class="accent-hover" href="./index.html">Студия</a></li>
-					<li class="nav-list__item center "><a class="accent accent-hover " href="./portfolio.html">Портфолио</a></li>
-					<li class="nav-list__item center "><a class="accent-hover" href="">Контакты</a></li>
+	<header class="header">
+		<a class="logo" href="./index.html"><span class="logo-word accent">Web</span>Studio</a>	
+		<svg class="menu-icon" data-mobileOpenMenu>
+			<use href="./img/symbol-defs.svg#icon-menu"></use>
+		</svg>
+		<div class="menu" data-mobileMenu>
+				<svg class="menu-close-btn accent-hover" data-mobileCloseMenu>
+					<use href="./img/symbol-defs.svg#icon-close"></use>
+				</svg>
+				<div class="wrapper">
+					<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-list__item"><a class="accent-hover" href="./index.html">Студия</a></li>
+						<li class="nav-list__item"><a class="accent accent-hover " href="./portfolio.html">Портфолио</a></li>
+						<li class="nav-list__item"><a class="accent-hover" href="">Контакты</a></li>
+					</ul>
+					</nav>
+				<ul class="contact-list">
+					<li class="contact-list__item accent-hover">
+						<svg class="icon-envelope icon-contact">
+							<use  href="./img/symbol-defs.svg#icon-envelope" ></use>
+						</svg>
+						<p>info@devstudio.com</p></li>
+					<li class="contact-list__item accent-hover ">
+						<svg class="icon-phone icon-contact">
+							<use href="./img/symbol-defs.svg#icon-phone" ></use>
+						</svg>
+						<p>+38 096 111 11 11</p>
+					</li>
 				</ul>
-			</nav>
-			<ul class="contact-list  list">
-				<li class="contact-list__item accent-hover center">
-					<svg class="icon-envelope icon">
-						<use href="./img/symbol-defs.svg#icon-envelope"></use>
-					</svg>
-					<p>info@devstudio.com</p>
-				</li>
-				<li class="contact-list__item accent-hover center">
-					<svg class="icon-phone icon">
-						<use href="./img/symbol-defs.svg#icon-phone"></use>
-					</svg>
-					<p>+38 096 111 11 11</p>
-				</li>
-			</ul>
+				</div>	
+				<ul class="social-list">
+					<li class="social-list__item"><a class="menu-social-link" href="">Instagram</a></li>
+					<li class="social-list__separator">|</li>
+					<li class="social-list__item"><a class="menu-social-link" href="">Twitter</a></li>
+					<li class="social-list__separator">|</li>
+					<li class="social-list__item"><a class="menu-social-link" href="">Facebook</a></li>
+					<li class="social-list__separator">|</li>
+					<li class="social-list__item"><a class="menu-social-link" href="">LinkedIn</a></li>
+				</ul>
 		</div>
-	</header>
+</header>
 
 	<main>
-		<section	class="filter box center">
+		<section	class="filter">
 		<h1 class="filter-title">portfolio</h1>
 		<nav>
-			<ul class="filter-list  list">
+			<ul class="filter-list">
 				<li class="filter-list__item"><button type="button" class="accent-hover accent-btn">Все</button></li>
 				<li class="filter-list__item"><button type="button" class="accent-hover">Веб-сайты</button></li>
 				<li class="filter-list__item"><button type="button" class="accent-hover">Приложения</button></li>
@@ -53,15 +70,15 @@
 		</nav>
 		</section>
 
-		<section class="content center">
-		<ul class="content-list list  box">
+		<section class="content">
+		<ul class="content-list ">
 			<li class="content-list__item">
-				<a  class="lick-project" href="">
+				<a  class="link-project" href="">
 				<div class="img-dis">
-				<img src="./img/portfolioImg1.jpg" alt="a laptop" width="370" height="294">
-				<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
-				исчерпывающие сведения о компании или частном лице.
-				</p>
+					<img src="./img/portfolioImg1.webp" alt="a laptop">
+					<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+					исчерпывающие сведения о компании или частном лице.
+					</p>
 				</div>
 				<div class="content-dis">
 					<h2>Технокряк</h2>
@@ -70,9 +87,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-				<a class="lick-project" href="">
+				<a class="link-project" href="">
 					<div class="img-dis">
-						<img src="./img/portfolioImg2.jpg" alt="a laptop" width="370" height="294">
+						<img src="./img/portfolioImg2.webp" alt="a laptop">
 						<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 							позволит посетителю получить
 							исчерпывающие сведения о компании или частном лице.
@@ -85,9 +102,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-				<a class="lick-project" href="">
+				<a class="link-project" href="">
 					<div class="img-dis">
-						<img src="./img/portfolioImg3.jpg" alt="a laptop" width="370" height="294">
+						<img src="./img/portfolioImg3.webp" alt="a laptop">
 						<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 							позволит посетителю получить
 							исчерпывающие сведения о компании или частном лице.
@@ -100,9 +117,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-				<a class="lick-project" href="">
+				<a class="link-project" href="">
 					<div class="img-dis">
-						<img src="./img/portfolioImg4.jpg" alt="a laptop" width="370" height="294">
+						<img src="./img/portfolioImg4.webp" alt="a laptop">
 						<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 							позволит посетителю получить
 							исчерпывающие сведения о компании или частном лице.
@@ -115,9 +132,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-				<a class="lick-project" href="">
+				<a class="link-project" href="">
 					<div class="img-dis">
-						<img src="./img/portfolioImg5.jpg" alt="a laptop" width="370" height="294">
+						<img src="./img/portfolioImg5.webp" alt="a laptop">
 						<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 							позволит посетителю получить
 							исчерпывающие сведения о компании или частном лице.
@@ -130,9 +147,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-				<a class="lick-project" href="">
+				<a class="link-project" href="">
 					<div class="img-dis">
-						<img src="./img/portfolioImg6.jpg" alt="a laptop" width="370" height="294">
+						<img src="./img/portfolioImg6.webp" alt="a laptop">
 						<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 							позволит посетителю получить
 							исчерпывающие сведения о компании или частном лице.
@@ -145,9 +162,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-				<a class="lick-project" href="">
+				<a class="link-project" href="">
 					<div class="img-dis">
-						<img src="./img/portfolioImg7.jpg" alt="a laptop" width="370" height="294">
+						<img src="./img/portfolioImg7.webp" alt="a laptop">
 						<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 							позволит посетителю получить
 							исчерпывающие сведения о компании или частном лице.
@@ -160,9 +177,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-				<a class="lick-project" href="">
+				<a class="link-project" href="">
 					<div class="img-dis">
-						<img src="./img/portfolioImg8.jpg" alt="a laptop" width="370" height="294">
+						<img src="./img/portfolioImg8.webp" alt="a laptop">
 						<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 							позволит посетителю получить
 							исчерпывающие сведения о компании или частном лице.
@@ -175,9 +192,9 @@
 				</a>
 			</li>
 			<li class="content-list__item">
-					<a class="lick-project" href="">
+					<a class="link-project" href="">
 						<div class="img-dis">
-							<img src="./img/portfolioImg9.jpg" alt="a laptop" width="370" height="294">
+							<img src="./img/portfolioImg9.webp" alt="a laptop">
 							<p class="img-dis-item">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
 								позволит посетителю получить
 								исчерпывающие сведения о компании или частном лице.
@@ -193,60 +210,74 @@
 	</section>
 	</main>
 
-		<footer class="footer">
-			<div class="footer-box box ">
-				<div class="footer-addres">
-					<a class="logo" href="./index.html"><span class="logo-word accent">Web</span>Studio</a>
-					<address>
-						<ul class="address-list list">
-							<li class="address-list__item accent-hover">
-								<p>г. Киев, пр-т Леси Украинки, 26</p>
-							</li>
-							<li class="address-list__item accent-hover">
-								<p>info@example.com</p>
-							</li>
-							<li class="address-list__item accent-hover">
-								<p>+38 099 111 11 11</p>
-							</li>
-						</ul>
-					</address>
-				</div>
-				<div class="footer-social">
-					<h2 class="footer-social_title">присоединяйтесь</h2>
-					<ul class="social">
-						<li>
-							<a class="social-link" href="">
-								<svg class="social-link-icon">
-									<use href="./img/symbol-defs.svg#icon-instagram"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-link" href="">
-								<svg class="social-link-icon">
-									<use href="./img/symbol-defs.svg#icon-twitter"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-link" href="">
-								<svg class="social-link-icon">
-									<use href="./img/symbol-defs.svg#icon-facebook"></use>
-								</svg>
-							</a>
-						</li>
-						<li>
-							<a class="social-link" href="">
-								<svg class="social-link-icon">
-									<use href="./img/symbol-defs.svg#icon-linkedin"></use>
-								</svg>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		
-		</footer>
+	<footer class="footer box">	
+				
+		<div class="footer-addres">
+			<a class="logo" href="./index.html"><span class="logo-word accent">Web</span>Studio</a>
+			<address>
+				<ul class="address-list">
+					<li class="address-list__item accent-hover">
+						<p>г. Киев, пр-т Леси Украинки, 26</p>
+					</li>
+					<li class="address-list__item accent-hover">
+						<p>info@example.com</p>
+					</li>
+					<li class="address-list__item accent-hover">
+						<p>+38 099 111 11 11</p>
+					</li>
+				</ul>
+				</address>
+		</div>
+		<div class="footer-social">
+			<h2 class="footer-social_title">присоединяйтесь</h2>
+			<ul class="social-list">
+				<li class="socisl-list_item">
+					<a class="social-link" href="">
+						<svg class="social-link-icon">
+							<use href="./img/symbol-defs.svg#icon-instagram"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socisl-list_item">
+					<a class="social-link" href="">
+						<svg class="social-link-icon">
+							<use href="./img/symbol-defs.svg#icon-twitter"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socisl-list_item">
+					<a class="social-link" href="">
+						<svg class="social-link-icon">
+							<use href="./img/symbol-defs.svg#icon-facebook"></use>
+						</svg>
+					</a>
+				</li>
+				<li class="socisl-list_item">
+					<a class="social-link" href="">
+						<svg class="social-link-icon">
+							<use href="./img/symbol-defs.svg#icon-linkedin"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="distribution">
+
+			<h2 class="form-title">Подпишитесь на рассылку</h2>
+
+			<form class="form" action="">
+									<input class="form-input" type="text"	placeholder="E-mail">
+				<button class="form-btn" type="submit">
+					<span>Подписаться</span>
+					<svg class="form-btn-icon">
+						<use href="./img/symbol-defs.svg#icon-send"></use>
+					</svg>
+				</button>
+			</form>
+		</div>
 	
+</footer>
+
+	<script src="./menu.js"></script>
 </body>
 </html>

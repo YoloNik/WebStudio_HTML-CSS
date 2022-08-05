@@ -1,0 +1,30 @@
+.about {
+  margin-top: 94px;
+}
+.about-list__item {
+  width: 270px;
+  margin-left: 30px;
+}
+.about-list__item:first-child {
+  margin: 0;
+}
+.about-list__item h2 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.about-list__item p {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--second-text-color);
+}
+.about-icon {
+  border-radius: 4px;
+  width: 65px;
+  height: 70px;
+  background-color: var(--team-bg);
+  padding: 25px 102px;
+  margin-bottom: 30px;
+}/*# sourceMappingURL=about.css.map */

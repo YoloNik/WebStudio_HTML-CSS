@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.filter-title {
+  display: none;
+}
+
+.filter-list__item button {
+  background-color: var(--team-bg);
+  color: var(--main-text-color);
+  border: none;
+  height: 38px;
+  margin: 100px 4px 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  border-radius: 4px;
+}
+.filter-list__item button .accent-btn {
+  background-color: var(--acсent-color);
+  color: var(--white-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}/*# sourceMappingURL=filter.css.map */
